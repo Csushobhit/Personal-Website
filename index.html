@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Animation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="sky"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <p class="greeting">Hi, I'm</p>
+    <h1 class="name">Sushobhit Chattaraj</h1>
+  </header>
+
+  <!-- Theme toggle -->
+  <div class="theme-slider" id="themeBtn">
+    <div class="slider-track">
+      <span class="icon sun">☀️</span>
+      <span class="icon moon">🌙</span>
+      <div class="slider-thumb" id="themeThumb"></div>
+    </div>
+  </div>
+
+  <!-- Scrolling BG text — behind character -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>BACKEND DEVELOPER</span>
+      <span>AI/ML ENGINEER</span>
+      <span>BACKEND DEVELOPER</span>
+      <span>AI/ML ENGINEER</span>
+      <span>BACKEND DEVELOPER</span>
+      <span>AI/ML ENGINEER</span>
+    </div>
+  </div>
+
+  <!-- Character -->
+  <div class="char-stage">
+    <img src="3DART.png" alt="Sushobhit" class="char-img" />
+  </div>
+
+  <!-- Glassmorphic Navbar -->
+<nav class="glass-nav">
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About Me</a>
+    <a href="project.html" class="nav-link">Projects</a>
+    <a href="https://drive.google.com/file/d/1rkzDHV0mvofhrqByRTvXyIO78OkvjjfY/view?usp=sharing" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a>
+    <a href="#" class="nav-link" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}); return false;">Contact</a>
+  </div>
+  <div class="nav-sep"></div>
+  <div class="nav-icons">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/sushobhit-chattaraj-410b2a253/" class="nav-icon-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 32 32">
+        <rect width="32" height="32" rx="7" fill="#0A66C2" />
+        <path
+          d="M8.5 13h3.6V24H8.5zm1.8-1.7a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm3.7 1.7h3.45v1.51h.05a3.8 3.8 0 0 1 3.4-1.87c3.65 0 4.33 2.4 4.33 5.53V24h-3.6v-5.25c0-1.25-.02-2.86-1.74-2.86-1.75 0-2.02 1.37-2.02 2.77V24H14z"
+          fill="#fff" />
+      </svg>
+    </a>
+    <!-- GitHub -->
+    <a href="https://github.com/Csushobhit" class="nav-icon-btn" title="GitHub" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 32 32">
+        <rect width="32" height="32" rx="7" fill="#24292e" />
+        <path fill-rule="evenodd"
+          d="M16 5C9.93 5 5 9.93 5 16c0 4.86 3.15 8.98 7.52 10.44.55.1.75-.24.75-.52l-.02-1.84c-3.06.66-3.7-1.47-3.7-1.47-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.91.1-.7.38-1.19.69-1.46-2.44-.28-5.01-1.22-5.01-5.43 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.9 0 0 .92-.3 3.01 1.12A10.47 10.47 0 0 1 16 11.26c.93.01 1.87.13 2.74.37 2.09-1.42 3.01-1.12 3.01-1.12.6 1.5.22 2.62.11 2.9.7.77 1.13 1.75 1.13 2.95 0 4.22-2.57 5.15-5.02 5.42.4.34.74 1.01.74 2.03l-.01 3.02c0 .29.19.63.75.52A10.51 10.51 0 0 0 27 16C27 9.93 22.07 5 16 5z"
+          fill="#fff" />
+      </svg>
+    </a>
+    <!-- LeetCode -->
+    <a href="https://leetcode.com/u/sushobhitchattaraj/" class="nav-icon-btn" title="LeetCode" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 32 32">
+        <rect width="32" height="32" rx="7" fill="#FFA116" />
+        <path d="M22.35 22.9H13.5a.9.9 0 0 1 0-1.8h8.85a.9.9 0 1 1 0 1.8z" fill="#B3B3B3" />
+        <path
+          d="M20.7 27a3.3 3.3 0 0 1-2.35-.98l-6.3-6.3a3.3 3.3 0 0 1 0-4.67l6.3-6.3a3.32 3.32 0 0 1 4.68 0 .9.9 0 0 1-1.27 1.27 1.52 1.52 0 0 0-2.15 0l-6.3 6.3a1.52 1.52 0 0 0 0 2.15l6.3 6.3a1.52 1.52 0 0 0 2.15 0 .9.9 0 0 1 1.27 1.27A3.3 3.3 0 0 1 20.7 27z"
+          fill="#fff" />
+        <path d="M24.53 19.77H20.1a.9.9 0 1 1 0-1.8h4.43a.9.9 0 1 1 0 1.8z" fill="#FFA116" />
+      </svg>
+    </a>
+  </div>
+</nav>
+  <div class="about-overlay" id="aboutOverlay">
+    <div class="about-container">
+
+      <div class="about-text">
+        <h2>Who am I?</h2>
+        <p>
+          I’ve just completed my B.Tech in Computer Science (AI), finishing my end-semester exams. Over time, I’ve
+          explored everything from backend systems to AI-driven projects, always focusing on making things efficient and
+          meaningful. I also had the chance to intern in the CCOSW of the Army, where I got exposure to real-world
+          systems and workflows. I enjoy learning by building and constantly improving along the way.
+
+        </p>
+        <a href="about.html" class="about-link">Know more about me ↗</a>
+      </div>
+
+      <div class="about-images">
+        <img src="image1.jpg" class="card c1">
+        <img src="image2.jpg" class="card c2">
+        <img src="image3.jpg" class="card c3">
+        <img src="image4.jpg" class="card c4">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PROJECTS OVERLAY -->
+  <div class="projects-overlay">
+    <div class="projects-container">
+
+      <div class="projects-text">
+        <h2>A Few Things I’ve Built</h2>
+        <p>
+          I have worked on developing a combination of systems -large backend-driven and small interactive systems.
+          There are projects that are scaled and operate in real-time, and there are projects that investigate AI and
+          data-driven concepts. I like working on both the stack, and exploring new technologies and designs. As time
+          has passed, I have graduated to more complex implementations, to more production-like systems. Each of the
+          projects has been associated with learning something new and making things a bit more efficient than they were
+          previously.
+        </p>
+        <a href="project.html" class="projects-link">View more projects ↗</a>
+      </div>
+
+      <div class="projects-images">
+        <div class="msnry-col">
+          <img src="project1.jpg" class="msnry-img">
+          <img src="project2.jpg" class="msnry-img">
+          <img src="project3.jpg" class="msnry-img">
+          <img src="project1.jpg" class="msnry-img">
+          <img src="project2.jpg" class="msnry-img">
+          <img src="project3.jpg" class="msnry-img">
+        </div>
+        <div class="msnry-col">
+          <img src="project4.jpg" class="msnry-img">
+          <img src="project5.jpg" class="msnry-img">
+          <img src="project6.jpg" class="msnry-img">
+          <img src="project4.jpg" class="msnry-img">
+          <img src="project5.jpg" class="msnry-img">
+          <img src="project6.jpg" class="msnry-img">
+        </div>
+        <div class="msnry-col">
+          <img src="project7.jpg" class="msnry-img">
+          <img src="project8.jpg" class="msnry-img">
+          <img src="project9.jpg" class="msnry-img">
+          <img src="project7.jpg" class="msnry-img">
+          <img src="project8.jpg" class="msnry-img">
+          <img src="project9.jpg" class="msnry-img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journey-overlay" id="journeyOverlay">
+  <div class="journey-container">
+
+    <div class="journey-heading">
+      <h2>Journey<br>so far</h2>
+    </div>
+
+    <div class="timeline-line"></div>
+
+    <div class="journey-timeline">
+
+      <div class="timeline-entry">
+        <div class="entry-dot"></div>
+        <span class="entry-date">September 2025 – December 2025</span>
+        <span class="entry-role">Software Developer Intern</span>
+        <div class="entry-main">
+          <img src="org1.png" class="entry-logo">
+          <h3 class="entry-company">Indian Army</h3>
+        </div>
+        <p class="entry-desc">I am thankful to have been given a chance to be an intern Software Developer with the Indian Army where I was able to make significant contributions to real world systems. I developed automation solutions during this period to aid in streamlining workflow and mitigating manual labor, as well as the systems aimed at analyzing information related to security. I was able to work on the development of data-driven tools to monitor and report, and enhance documentation processes. All in all, it was an interesting experience that provided me with a practical experience of creating reliable and structured solutions in a disciplined environment.</p>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="entry-dot"></div>
+        <span class="entry-date">March 2024 – August 2024</span>
+        <span class="entry-role">Research Assistant</span>
+        <div class="entry-main">
+          <img src="org2.jpg" class="entry-logo">
+          <h3 class="entry-company">IEDC Lab</h3>
+        </div>
+        <p class="entry-desc">During my internship, worked on sentiment analysis, primarily on how to better classify short-form text such as tweets in real-world applications. I tested the combination of various methods, including lexical, statistical, and deep learning, and created a hybrid model, which outperformed regular baselines. In addition to that, I also created a little live app that would have a feedback loop to improve predictions as time goes by. Generally, it was a practical experience of transforming a research idea to a workable, practical system.</p>
+      </div>
+      <!-- add more entries as needed -->
+
+    </div>
+
+  </div>
+</div>
+
+  <!-- CONTACT OVERLAY -->
+  <div class="contact-overlay" id="contactOverlay">
+    <div class="contact-container">
+
+      <div class="contact-content">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-sub">Let's turn ideas into something meaningful</p>
+
+        <div class="contact-links">
+          <a href="mailto:csushobhit5515@gmail.com" class="contact-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 7l10 7 10-7"/>
+            </svg>
+            csushobhit5515@gmail.com
+          </a>
+
+          <a href="#" class="contact-social" title="LinkedIn">
+            <svg viewBox="0 0 32 32">
+              <rect width="32" height="32" rx="7" fill="#0A66C2"/>
+              <path d="M8.5 13h3.6V24H8.5zm1.8-1.7a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm3.7 1.7h3.45v1.51h.05a3.8 3.8 0 0 1 3.4-1.87c3.65 0 4.33 2.4 4.33 5.53V24h-3.6v-5.25c0-1.25-.02-2.86-1.74-2.86-1.75 0-2.02 1.37-2.02 2.77V24H14z" fill="#fff"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-earth">
+        <img src="earth.png" class="earth-img" id="earthImg" alt="Earth" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SCROLL DRIVER -->
+  <div class="scroll-driver"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
