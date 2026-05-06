@@ -559,7 +559,7 @@
   pointer-events: none;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .proj-glass-card {
     padding: 36px 38px;
   }
@@ -630,4 +630,4 @@
   .proj-hero-big {
     font-size: clamp(26px, 7vw, 42px);
   }
-}
+} */

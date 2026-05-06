@@ -19,9 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ══════════════════════════════════════════════════════════
-   LIGHT MODE
-══════════════════════════════════════════════════════════ */
+
 [data-theme="light"] body {
     background-image: linear-gradient(rgb(150, 175, 255), rgb(175, 155, 255));
 }
@@ -34,9 +32,7 @@ body {
     display: block;
 }
 
-/* ══════════════════════════════════════════════════════════
-   DARK MODE
-══════════════════════════════════════════════════════════ */
+
 [data-theme="dark"] body {
     background: radial-gradient(ellipse at bottom,
             #061427 0%,
@@ -72,9 +68,7 @@ body {
     display: block;
 }
 
-/* ══════════════════════════════════════════════════════════
-   SKY & CLOUDS
-══════════════════════════════════════════════════════════ */
+
 #sky {
     height: 100vh;
     width: 100vw;
@@ -110,9 +104,6 @@ body {
     animation: moveUp 60s linear infinite, fadeIn 2s ease-in forwards;
 }
 
-/* ══════════════════════════════════════════════════════════
-   PARTICLES / STARS / METEORS
-══════════════════════════════════════════════════════════ */
 .particles {
     position: fixed;
     top: 0;
@@ -189,9 +180,7 @@ body {
     }
 }
 
-/* ══════════════════════════════════════════════════════════
-   THEME TOGGLE — identical to index
-══════════════════════════════════════════════════════════ */
+
 .theme-slider {
     position: fixed;
     top: 18px;
@@ -245,9 +234,7 @@ body {
     transform: translateX(46px);
 }
 
-/* ══════════════════════════════════════════════════════════
-   GLASSMORPHIC NAVBAR — identical to index
-══════════════════════════════════════════════════════════ */
+
 .glass-nav {
     position: fixed;
     bottom: 28px;
@@ -698,11 +685,7 @@ body {
     display: block;
 }
 
-/* ══════════════════════════════════════════════════════════
-   TRANSITION STATES
-══════════════════════════════════════════════════════════ */
 
-/* Default hidden state for all sections */
 
 
 
