@@ -14,10 +14,10 @@ body {
     overflow-y: auto;
 }
 
-html,
+/* html,
 body {
     overflow-x: hidden;
-}
+} */
 
 
 [data-theme="light"] body {
