@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Grotesk:wght@700&family=EB+Garamond:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+/*
+  Calibrated for 100% browser zoom — originally designed at 75%.
+  All pixel values multiplied by 0.75;
+  vw coefficients multiplied by 1.333.
+*/
 
 /* ── Active nav link ── */
 .nav-link--active {
@@ -27,13 +35,13 @@
 }
 
 .proj-hero-inner {
-  max-width: 2000px;
+  max-width: 1500px;            /* 2000 × 0.75 */
   text-align: center;
 }
 
 .proj-hero-big {
   font-family: 'EB Garamond', serif;
-  font-size: clamp(34px, 5vw, 74px);
+  font-size: clamp(25.5px, 6.667vw, 55.5px);   /* 34→25.5 , 5→6.667 , 74→55.5 */
   font-weight: 400;
   line-height: 1.4;
   color: #111;
@@ -49,9 +57,9 @@
 }
 
 .proj-hero-sub {
-  margin-top: 28px;
+  margin-top: 21px;              /* 28 × 0.75 */
   font-family: 'Playwrite US Modern', monospace;
-  font-size: clamp(13px, 1.4vw, 18px);
+  font-size: clamp(9.75px, 1.867vw, 13.5px);   /* 13→9.75 , 1.4→1.867 , 18→13.5 */
   color: rgba(0, 0, 0, 0.40);
   letter-spacing: 0.04em;
 }
@@ -69,7 +77,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: 24px 5% 130px;
+  padding: 18px 5% 97.5px;      /* 24→18 , 130→97.5 */
 
   opacity: 0;
   pointer-events: none;
@@ -93,9 +101,9 @@
 
 .proj-feature-inner {
   width: 100%;
-  max-width: 1280px;
+  max-width: 960px;             /* 1280 × 0.75 */
 
-  transform: translateY(50px);
+  transform: translateY(37.5px); /* 50 × 0.75 */
   opacity: 0;
   transition:
     opacity  0.8s ease 0.1s,
@@ -111,18 +119,18 @@
 
 .proj-glass-card {
   background: rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(52px) saturate(200%);
-  -webkit-backdrop-filter: blur(52px) saturate(200%);
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  border-radius: 28px;
-  padding: 54px 64px;
+  backdrop-filter: blur(39px) saturate(200%);     /* 52 × 0.75 */
+  -webkit-backdrop-filter: blur(39px) saturate(200%);
+  border: 0.75px solid rgba(255, 255, 255, 0.32); /* 1 × 0.75 */
+  border-radius: 21px;            /* 28 × 0.75 */
+  padding: 40.5px 48px;           /* 54→40.5 , 64→48 */
   position: relative;
   overflow: hidden;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.55),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.08),
-    0 40px 100px rgba(0, 0, 0, 0.16),
-    0 8px 32px  rgba(0, 0, 0, 0.10);
+    inset 0 0.75px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -0.75px 0 rgba(255, 255, 255, 0.08),
+    0 30px 75px rgba(0, 0, 0, 0.16),   /* 40→30 , 100→75 */
+    0 6px 24px  rgba(0, 0, 0, 0.10);    /* 8→6 , 32→24 */
 }
 
 /* inner shimmer highlight */
@@ -144,29 +152,29 @@
   background: rgba(8, 14, 38, 0.48);
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.03),
-    0 40px 100px rgba(0, 0, 0, 0.65),
-    0 8px 32px  rgba(0, 0, 0, 0.45);
+    inset 0 0.75px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -0.75px 0 rgba(255, 255, 255, 0.03),
+    0 30px 75px rgba(0, 0, 0, 0.65),
+    0 6px 24px  rgba(0, 0, 0, 0.45);
 }
 
 .card-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 28px;
-  margin-bottom: 18px;
+  gap: 21px;                    /* 28 × 0.75 */
+  margin-bottom: 13.5px;        /* 18 × 0.75 */
 }
 
 .card-title-block {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3.75px;                  /* 5 × 0.75 */
 }
 
 .card-name {
   font-family: 'EB Garamond', serif;
-  font-size: clamp(34px, 4.2vw, 60px);
+  font-size: clamp(25.5px, 5.6vw, 45px);   /* 34→25.5 , 4.2→5.6 , 60→45 */
   font-weight: 800;
   color: #111;
   line-height: 1.0;
@@ -179,9 +187,9 @@
 
 .card-tagline {
   font-family: 'Playwrite US Modern', monospace;
-  font-size: clamp(14px, 1.5vw, 20px);
+  font-size: clamp(10.5px, 2vw, 15px);      /* 14→10.5 , 1.5→2 , 20→15 */
   color: rgba(0, 0, 0, 0.52);
-  margin-top: 4px;
+  margin-top: 3px;              /* 4 × 0.75 */
 }
 
 [data-theme="dark"] .card-tagline {
@@ -190,7 +198,7 @@
 
 .card-subtitle {
   font-family: 'Playwrite US Modern', monospace;
-  font-size: clamp(13px, 1.5vw, 17px);
+  font-size: clamp(9.75px, 2vw, 12.75px);    /* 13→9.75 , 1.5→2 , 17→12.75 */
   font-style: italic;
   color: rgba(0, 0, 0, 0.35);
 }
@@ -202,10 +210,10 @@
 .github-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 26px;
+  gap: 7.5px;                  /* 10 × 0.75 */
+  padding: 9px 19.5px;        /* 12→9 , 26→19.5 */
   font-family: 'Roboto Mono', monospace;
-  font-size: 13px;
+  font-size: 9.75px;           /* 13 × 0.75 */
   font-weight: 600;
   letter-spacing: 0.07em;
   color: #fff;
@@ -219,28 +227,28 @@
     box-shadow 0.22s ease,
     background 0.2s ease;
   box-shadow:
-    0 4px 18px rgba(0, 0, 0, 0.30),
-    inset 0 1px 0 rgba(255, 255, 255, 0.10);
+    0 3px 13.5px rgba(0, 0, 0, 0.30),   /* 4→3 , 18→13.5 */
+    inset 0 0.75px 0 rgba(255, 255, 255, 0.10);
 }
 
 .github-btn svg {
-  width: 17px;
-  height: 17px;
+  width: 12.75px;              /* 17 × 0.75 */
+  height: 12.75px;
   flex-shrink: 0;
 }
 
 .github-btn:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.40);
+  transform: translateY(-1.5px) scale(1.04); /* -2→-1.5 */
+  box-shadow: 0 10.5px 27px rgba(0, 0, 0, 0.40); /* 14→10.5 , 36→27 */
   background: #2f363d;
 }
 
 [data-theme="dark"] .github-btn {
   background: rgba(255, 255, 255, 0.10);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 0.75px solid rgba(255, 255, 255, 0.18);
   box-shadow:
-    0 4px 18px rgba(0, 0, 0, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    0 3px 13.5px rgba(0, 0, 0, 0.45),
+    inset 0 0.75px 0 rgba(255, 255, 255, 0.08);
 }
 
 [data-theme="dark"] .github-btn:hover {
@@ -252,18 +260,18 @@
 .card-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
+  gap: 6px;                    /* 8 × 0.75 */
+  margin-bottom: 12px;         /* 16 × 0.75 */
 }
 
 .tag {
   font-family: 'Roboto Mono', monospace;
-  font-size: 13px;
+  font-size: 9.75px;           /* 13 × 0.75 */
   letter-spacing: 0.09em;
   color: rgba(0, 0, 0, 0.50);
   background: rgba(0, 0, 0, 0.055);
-  border: 1px solid rgba(0, 0, 0, 0.09);
-  padding: 5px 16px;
+  border: 0.75px solid rgba(0, 0, 0, 0.09);
+  padding: 3.75px 12px;       /* 5→3.75 , 16→12 */
   border-radius: 999px;
 }
 
@@ -276,11 +284,11 @@
 
 .card-desc {
   font-family: 'Playwrite US Modern', monospace;
-  font-size: clamp(14px, 1.4vw, 18px);
+  font-size: clamp(10.5px, 1.867vw, 13.5px);   /* 14→10.5 , 1.4→1.867 , 18→13.5 */
   line-height: 1.75;
   color: rgba(0, 0, 0, 0.62);
-  max-width: 860px;
-  margin-bottom: 26px;
+  max-width: 645px;            /* 860 × 0.75 */
+  margin-bottom: 19.5px;       /* 26 × 0.75 */
 }
 
 [data-theme="dark"] .card-desc {
@@ -291,37 +299,37 @@
 .card-panels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 13.5px;                 /* 18 × 0.75 */
 }
 
 .card-panel {
   background: rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  border-radius: 16px;
-  padding: 22px 26px;
+  backdrop-filter: blur(12px); /* 16 × 0.75 */
+  -webkit-backdrop-filter: blur(12px);
+  border: 0.75px solid rgba(255, 255, 255, 0.38);
+  border-radius: 12px;        /* 16 × 0.75 */
+  padding: 16.5px 19.5px;    /* 22→16.5 , 26→19.5 */
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.45),
-    0 4px 16px rgba(0, 0, 0, 0.06);
+    inset 0 0.75px 0 rgba(255, 255, 255, 0.45),
+    0 3px 12px rgba(0, 0, 0, 0.06);  /* 4→3 , 16→12 */
 }
 
 [data-theme="dark"] .card-panel {
   background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.07);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 4px 16px rgba(0, 0, 0, 0.20);
+    inset 0 0.75px 0 rgba(255, 255, 255, 0.05),
+    0 3px 12px rgba(0, 0, 0, 0.20);
 }
 
 .card-panel h4 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 10px;
+  font-size: 7.5px;            /* 10 × 0.75 */
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.32);
-  margin-bottom: 12px;
+  margin-bottom: 9px;          /* 12 × 0.75 */
 }
 
 [data-theme="dark"] .card-panel h4 {
@@ -332,22 +340,22 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4.5px;                  /* 6 × 0.75 */
 }
 
 .card-panel ul li {
   font-family: 'Playwrite US Modern', monospace;
-  font-size: clamp(12px, 1.1vw, 15px);
+  font-size: clamp(9px, 1.467vw, 11.25px);   /* 12→9 , 1.1→1.467 , 15→11.25 */
   color: rgba(0, 0, 0, 0.62);
   line-height: 1.5;
-  padding-left: 14px;
+  padding-left: 10.5px;        /* 14 × 0.75 */
   position: relative;
 }
 
 .card-panel ul li::before {
   content: '·';
   position: absolute;
-  left: 2px;
+  left: 1.5px;                 /* 2 × 0.75 */
   color: rgba(0, 0, 0, 0.28);
 }
 
@@ -366,7 +374,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 8% 130px;
+  padding: 18px 8% 97.5px;     /* 24→18 , 130→97.5 */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.7s ease;
@@ -384,9 +392,9 @@
 
 .archives-inner {
   width: 100%;
-  max-width: 1100px;
+  max-width: 825px;            /* 1100 × 0.75 */
 
-  transform: translateY(50px);
+  transform: translateY(37.5px); /* 50 × 0.75 */
   opacity: 0;
   transition:
     opacity  0.8s ease 0.1s,
@@ -400,11 +408,11 @@
 
 .archives-heading {
   font-family: 'EB Garamond', serif;
-  font-size: clamp(48px, 6.5vw, 92px);
+  font-size: clamp(36px, 8.667vw, 69px);   /* 48→36 , 6.5→8.667 , 92→69 */
   font-weight: 700;
   color: #111;
   line-height: 1;
-  margin-bottom: 28px;
+  margin-bottom: 21px;         /* 28 × 0.75 */
 }
 
 [data-theme="dark"] .archives-heading {
@@ -414,26 +422,26 @@
  .archive-list {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 18px;
+   gap: 13.5px;                /* 18 × 0.75 */
  }
 
  .archive-card {
    display: flex;
    flex-direction: column;
-   gap: 10px;
-   padding: 28px 30px;
+   gap: 7.5px;                 /* 10 × 0.75 */
+   padding: 21px 22.5px;       /* 28→21 , 30→22.5 */
    background: rgba(255, 255, 255, 0.13);
-   backdrop-filter: blur(48px) saturate(190%);
-   -webkit-backdrop-filter: blur(48px) saturate(190%);
-   border: 1px solid rgba(255, 255, 255, 0.30);
-   border-radius: 22px;
+   backdrop-filter: blur(36px) saturate(190%);   /* 48 × 0.75 */
+   -webkit-backdrop-filter: blur(36px) saturate(190%);
+   border: 0.75px solid rgba(255, 255, 255, 0.30);
+   border-radius: 16.5px;      /* 22 × 0.75 */
    position: relative;
    overflow: hidden;
    box-shadow:
-     inset 0 1px 0 rgba(255, 255, 255, 0.50),
-     inset 0 -1px 0 rgba(255, 255, 255, 0.06),
-     0 12px 40px rgba(0, 0, 0, 0.10),
-     0 4px 16px rgba(0, 0, 0, 0.07);
+     inset 0 0.75px 0 rgba(255, 255, 255, 0.50),
+     inset 0 -0.75px 0 rgba(255, 255, 255, 0.06),
+     0 9px 30px rgba(0, 0, 0, 0.10),   /* 12→9 , 40→30 */
+     0 3px 12px rgba(0, 0, 0, 0.07);    /* 4→3 , 16→12 */
    transition:
      transform  0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
      box-shadow 0.25s ease;
@@ -455,32 +463,32 @@
  }
 
  .archive-card:hover {
-   transform: translateY(-4px);
+   transform: translateY(-3px);  /* -4 × 0.75 */
    box-shadow:
-     inset 0 1px 0 rgba(255, 255, 255, 0.55),
-     0 24px 60px rgba(0, 0, 0, 0.16),
-     0 8px 24px rgba(0, 0, 0, 0.10);
+     inset 0 0.75px 0 rgba(255, 255, 255, 0.55),
+     0 18px 45px rgba(0, 0, 0, 0.16),   /* 24→18 , 60→45 */
+     0 6px 18px rgba(0, 0, 0, 0.10);    /* 8→6 , 24→18 */
  }
 
  [data-theme="dark"] .archive-card {
    background: rgba(8, 14, 38, 0.45);
    border-color: rgba(255, 255, 255, 0.08);
    box-shadow:
-     inset 0 1px 0 rgba(255, 255, 255, 0.07),
-     0 12px 40px rgba(0, 0, 0, 0.50),
-     0 4px 16px rgba(0, 0, 0, 0.35);
+     inset 0 0.75px 0 rgba(255, 255, 255, 0.07),
+     0 9px 30px rgba(0, 0, 0, 0.50),
+     0 3px 12px rgba(0, 0, 0, 0.35);
  }
 
 [data-theme="dark"] .archive-card:hover {
    box-shadow:
-     inset 0 1px 0 rgba(255, 255, 255, 0.10),
-     0 24px 60px rgba(0, 0, 0, 0.65),
-     0 8px 24px rgba(0, 0, 0, 0.45);
+     inset 0 0.75px 0 rgba(255, 255, 255, 0.10),
+     0 18px 45px rgba(0, 0, 0, 0.65),
+     0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
 .archive-name {
   font-family: 'EB Garamond', serif;
-  font-size: clamp(17px, 1.7vw, 23px);
+  font-size: clamp(12.75px, 2.267vw, 17.25px);  /* 17→12.75 , 1.7→2.267 , 23→17.25 */
   font-weight: 700;
   color: #111;
   white-space: nowrap;
@@ -492,7 +500,7 @@
 
 .archive-desc {
   font-family: 'Playwrite US Modern', monospace;
-  font-size: clamp(10px, 1vw, 13px);
+  font-size: clamp(7.5px, 1.333vw, 9.75px);     /* 10→7.5 , 1→1.333 , 13→9.75 */
   color: rgba(0, 0, 0, 0.50);
   line-height: 1.55;
 }
@@ -504,17 +512,17 @@
 .archive-github {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 8px 18px;
+  gap: 5.25px;                 /* 7 × 0.75 */
+  padding: 6px 13.5px;         /* 8→6 , 18→13.5 */
   font-family: 'Roboto Mono', monospace;
-  font-size: 11px;
+  font-size: 8.25px;           /* 11 × 0.75 */
   font-weight: 600;
   letter-spacing: 0.07em;
   margin-top: auto;
   align-self: flex-start;
   color: #111;
   text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0.18);
+  border: 0.75px solid rgba(0, 0, 0, 0.18);
   border-radius: 999px;
   white-space: nowrap;
   transition:
@@ -526,17 +534,17 @@
 }
 
 .archive-github svg {
-  width: 13px;
-  height: 13px;
+  width: 9.75px;               /* 13 × 0.75 */
+  height: 9.75px;
   flex-shrink: 0;
 }
 
 .archive-github:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.75px);  /* -1 × 0.75 */
   background: #111;
   color: #fff;
   border-color: #111;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4.5px 15px rgba(0, 0, 0, 0.22);  /* 6→4.5 , 20→15 */
 }
 
 [data-theme="dark"] .archive-github {
@@ -548,7 +556,7 @@
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.32);
   color: #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.40);
+  box-shadow: 0 4.5px 15px rgba(0, 0, 0, 0.40);
 }
 
 
@@ -559,9 +567,13 @@
   pointer-events: none;
 }
 
-/* @media (max-width: 1024px) {
+/* ──────────────────────────────────────────────
+   Responsive adjustments
+   (breakpoints unchanged, internal px values scaled)
+────────────────────────────────────────────── */
+@media (max-width: 1024px) {
   .proj-glass-card {
-    padding: 36px 38px;
+    padding: 27px 28.5px;    /* 36→27 , 38→28.5 */
   }
   .card-desc {
     max-width: 100%;
@@ -570,64 +582,64 @@
 
 @media (max-width: 820px) {
   .proj-feature-overlay {
-    padding: 16px 4% 120px;
+    padding: 12px 4% 90px;   /* 16→12 , 120→90 */
     align-items: flex-start;
     overflow-y: auto;
-    padding-top: 24px;
+    padding-top: 18px;        /* 24→18 */
   }
   .proj-glass-card {
-    padding: 28px 24px;
+    padding: 21px 18px;      /* 28→21 , 24→18 */
   }
   .card-header {
     flex-direction: column;
-    gap: 14px;
+    gap: 10.5px;             /* 14→10.5 */
   }
   .github-btn {
     align-self: flex-start;
   }
   .card-panels {
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 9px;                /* 12→9 */
   }
   .archives-overlay {
-    padding: 16px 5% 120px;
+    padding: 12px 5% 90px;
     align-items: flex-start;
     overflow-y: auto;
   }
   .archives-inner {
-    padding-top: 16px;
+    padding-top: 12px;       /* 16→12 */
   }
   .archive-list {
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    gap: 10.5px;             /* 14→10.5 */
   }
 }
 
 @media (max-width: 560px) {
   .proj-glass-card {
-    padding: 22px 18px;
+    padding: 16.5px 13.5px;  /* 22→16.5 , 18→13.5 */
   }
   .card-name {
-    font-size: clamp(26px, 7vw, 40px);
+    font-size: clamp(19.5px, 7vw, 30px);  /* 26→19.5 , 40→30 */
   }
   .card-panels {
     grid-template-columns: 1fr;
   }
   .card-tags {
-    gap: 6px;
+    gap: 4.5px;              /* 6→4.5 */
   }
   .tag {
-    font-size: 11px;
-    padding: 4px 11px;
+    font-size: 8.25px;       /* 11→8.25 */
+    padding: 3px 8.25px;    /* 4→3 , 11→8.25 */
   }
   .archive-list {
     grid-template-columns: 1fr;
   }
   .archives-heading {
-    font-size: clamp(36px, 10vw, 56px);
-    margin-bottom: 18px;
+    font-size: clamp(27px, 10vw, 42px);  /* 36→27 , 56→42 */
+    margin-bottom: 13.5px;   /* 18→13.5 */
   }
   .proj-hero-big {
-    font-size: clamp(26px, 7vw, 42px);
+    font-size: clamp(19.5px, 7vw, 31.5px); /* 26→19.5 , 42→31.5 */
   }
-} */
+}
